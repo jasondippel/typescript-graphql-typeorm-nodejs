@@ -1,0 +1,23 @@
+{
+  "name": "typescript-graphql-typeorm-nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jasondippel/typescript-graphql-typeorm-nodejs.git",
+  "author": "Jason Dippel <dippelj12@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/src/index.js",
+    "dev": "tsc -w & nodemon -q --on-change-only -w dist dist/src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  }
+}
